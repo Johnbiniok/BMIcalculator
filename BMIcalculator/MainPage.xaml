@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BMIcalculator.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+  <Label Text="Welcome to Johns Awesome BMI calculator"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+         FontSize="20"
+         TextColor="DarkBlue"
+         Padding="10,60,10,100"/>
+            
+            </Frame>
+        <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="BMIout" />
+        <Entry Keyboard="Numeric" Placeholder="Weight in lbs" PlaceholderColor="DarkRed" x:Name="weight" />
+        <Label Text="Enter height"
+        HorizontalOptions="Center"
+        FontSize="16" />
+        <Entry Keyboard="Numeric" Placeholder="Feet" PlaceholderColor="DarkRed" x:Name="feet" />
+        <Entry Keyboard="Numeric" Placeholder="Inches" PlaceholderColor="DarkRed" x:Name="inches" />
+
+        <Button Text="Find BMI" Clicked="Handle_Submit" Padding="5,5,5,5"/>
+
+        <!--<Editor Placeholder="Feet" PlaceholderColor="DarkRed" x:Name="feet" />-->
+        <!--<Editor Placeholder="Inches" PlaceholderColor="DarkRed" x:Name="inches" />-->
+  
+</StackLayout>
+</ContentPage>
